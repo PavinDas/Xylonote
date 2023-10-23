@@ -5,6 +5,7 @@ Expanded keys(int note, Color color) {
   return Expanded(
     child: TextButton(
       style: TextButton.styleFrom(
+        enableFeedback: false,
         shape: const BeveledRectangleBorder(),
         backgroundColor: color,
       ),
