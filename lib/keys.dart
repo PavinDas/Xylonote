@@ -11,10 +11,47 @@ Expanded keys(int note, Color color) {
       ),
       onPressed: () {
         final player = AudioPlayer();
-        player.play(AssetSource("$note.wav"));
+        player.play(
+          AssetSource("$note.wav"),
+        );
       },
       child: const SizedBox(
         width: double.infinity,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(
+                  Icons.circle,
+                  color: Colors.black26,
+                  size: 15,
+                ),
+                Icon(
+                  Icons.circle,
+                  color: Colors.black26,
+                  size: 15,
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(
+                  Icons.circle,
+                  color: Colors.black26,
+                  size: 15,
+                ),
+                Icon(
+                  Icons.circle,
+                  color: Colors.black26,
+                  size: 15,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     ),
   );
